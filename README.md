@@ -1,44 +1,101 @@
-# FCai Programming Assignment - Term 1 Projects
+# 🎓 FCai Programming Assignment – Term 1
 
-## 👤 Student Information
-- **Name**: Ahmed Sheref Sayed Ahmed
-- **ID**: 20230542
-- **TA**: Mohamed Elramly
-- **Submission Date**: 10 Oct 2024
-
----
-
-## 📁 Project Overview
-
-This repository includes **three console-based C++ projects**:
-
-- [Task 1 – Multi-Tool Utility](#1-task-1---multi-tool-utility)
-- [Task 2 – Terminal UI: Calculator & Cipher](#2-task-2---terminal-ui-calculator--cipher)
-- [Task 3 – Object-Oriented Game](#3-task-3---object-oriented-game)
+## 👨‍💻 Student Info
+- **Name:** Ahmed Sheref Sayed Ahmed  
+- **ID:** 20230542  
+- **TA Name:** Mohamed Elramly  
+- **Submission Date:** 10 Oct 2024  
 
 ---
 
-## 1. Task 1 - Multi-Tool Utility `A1_T1_NULL_20230542`
+## 📦 Project List
 
-### 🔧 Features
+| Task | Title                                  | Folder Name             |
+|------|----------------------------------------|--------------------------|
+| 1    | Multi-Tool Console Application         | `A1_T1_NULL_20230542`    |
+| 2    | Terminal-Based UI (Calculator + Cipher)| `A1_T2_NULL_20230542`    |
+| 3    | OOP-Based Simple Game                  | `A1_T3_NULL_20230542`    |
 
-- **Text Formatter**: Capitalizes sentences and fixes spacing.
-- **Prime Finder**: Uses the Sieve of Eratosthenes to print primes up to a limit.
-- **Domino Solver**: Validates if a domino chain can be formed.
-- **Arabic Censorship Filter**: Replaces political words with alternatives.
+---
 
-Task 2 - Terminal UI: Calculator & Cipher A1_T2_NULL_20230542
-🔧 Features
-Simple Calculator: Basic arithmetic with custom UI.
+## 🧩 Task 1 – Multi-Tool Console Application
 
-Text Encryption Tool: Caesar cipher with key input.
-3. Task 3 - Object-Oriented Game A1_T3_NULL_20230542
-🎮 Description
-A simple OOP-based game that uses polymorphism and class structure.
+**📁 Folder**: `A1_T1_NULL_20230542`
 
-👨‍💻 Technologies
-C++ Classes and Inheritance
+### ✨ Features
+- ✅ Sentence Capitalization & Space Fixing  
+- ✅ Prime Number Generator using Sieve  
+- ✅ Domino Chain Validator  
+- ✅ Arabic Word Censorship Tool (uses wide characters)  
 
-OOP Concepts: Encapsulation, Abstraction, Polymorphism
+### 🚀 How to Compile & Run
+```bash
+cd A1_T1_NULL_20230542
+g++ -std=c++11 -o Task1 main.cpp
+./Task1
+🛠️ Implementation Highlights
+Wide string support for Arabic.
 
-File I/O and Vectors
+Modular functions with clear separation.
+
+Efficient use of STL and dynamic memory.
+
+🧮 Task 2 – Terminal UI: Calculator & Caesar Cipher
+📁 Folder: A1_T2_NULL_20230542
+
+✨ Features
+✅ Terminal Calculator (Basic Arithmetic)
+
+✅ Caesar Cipher Encryptor (User-defined key)
+
+🎨 UI Elements
+ASCII UI layout
+
+Colored terminal output (if supported)
+
+🚀 How to Compile & Run
+bash
+Copy
+Edit
+cd A1_T2_NULL_20230542
+g++ -std=c++11 -o Task2 main.cpp
+./Task2
+🎮 Task 3 – Object-Oriented Game
+📁 Folder: A1_T3_NULL_20230542
+
+🧱 OOP Features
+✅ Class-based structure with inheritance
+
+✅ Abstraction & Polymorphism
+
+✅ Clean encapsulated logic
+
+🚀 How to Compile & Run
+bash
+Copy
+Edit
+cd A1_T3_NULL_20230542
+g++ -std=c++11 -o Task3 main.cpp
+./Task3
+📂 Directory Structure
+css
+Copy
+Edit
+.
+├── A1_T1_NULL_20230542/
+│   └── main.cpp
+├── A1_T2_NULL_20230542/
+│   └── main.cpp
+├── A1_T3_NULL_20230542/
+│   └── main.cpp
+└── README.md
+✅ Submission Checklist
+ All 3 tasks completed
+
+ Each task in its own folder
+
+ Modular, clean code with comments
+
+ Working executables (tested)
+
+ Submitted before deadline
