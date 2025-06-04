@@ -1,67 +1,61 @@
-# 🎓 FCai Programming Assignment – Term 1
+FCai Programming Assignment – Term 1
+👨‍💻 Student Information
+Name: Ahmed Sheref Sayed Ahmed
 
-## 👨‍💻 Student Info
-- **Name:** Ahmed Sheref Sayed Ahmed  
-- **ID:** 20230542  
-- **TA Name:** Mohamed Elramly  
-- **Submission Date:** 10 Oct 2024  
+ID: 20230542
 
----
+TA Name: Mohamed Elramly
 
-## 📦 Project List
+Submission Date: 10 Oct 2024
 
-| Task | Title                                  | Folder Name             |
-|------|----------------------------------------|--------------------------|
-| 1    | Multi-Tool Console Application         | `A1_T1_NULL_20230542`    |
-| 2    | Terminal-Based UI (Calculator + Cipher)| `A1_T2_NULL_20230542`    |
-| 3    | OOP-Based Simple Game                  | `A1_T3_NULL_20230542`    |
+📦 Project List
+Task	Title	Folder Name
+1	Multi-Tool Console Application	A1_T1_NULL_20230542
+2	Terminal-Based UI (Calculator + Cipher)	A1_T2_NULL_20230542
+3	OOP-Based Simple Game	A1_T3_NULL_20230542
 
----
+🧩 Task 1 – Multi-Tool Console Application
+StringSet Project
+Overview
+This project implements a C++ StringSet class to manage collections of words extracted from text or files. It supports fundamental set operations, word management, and similarity measurement between sets.
 
-## 🧩 Task 1 – Multi-Tool Console Application
+Features
+Load words from a file: Reads text from a file, extracts alphabetic words, converts them to lowercase, and stores them in a document set (D).
 
-# StringSet Project
+Load words from a string: Processes input strings to create a query set (Q) in the same manner.
 
-## Overview
-This project provides a C++ implementation of a `StringSet` class designed to manage collections of words from text input or files. It supports basic set operations such as union and intersection, word addition/removal, and computes similarity between two sets based on their content.
+Add/Remove words: Allows dynamic modification of the query set.
 
----
+Clear query set: Empties the current query set.
 
-## Features
+Set operations:
 
-- **Load words from a file**: Reads text from a specified file, processes it by extracting alphabetic words, converting them to lowercase, and storing them in the document set (`D`).
-- **Load words from a text string**: Parses an input string similarly to create a query set (`Q`).
-- **Add/Remove words**: Allows dynamic modification of the query set with new or removed words.
-- **Clear query set**: Empties the query set.
-- **Set operations**:
-  - **Union (`+`)**: Combines two `StringSet` objects' query sets, eliminating duplicates.
-  - **Intersection (`*`)**: Finds common words between two `StringSet` objects' query sets.
-- **Similarity computation**: Calculates a similarity score between the document set (`D`) and query set (`Q`) based on the cosine similarity formula applied to the presence of unique words.
-- **Display functionality**: Shows the current query set in a neat, tabular format with indices and words.
-- **Helper utilities**: Helper class for file handling, character checks, and word extraction.
+Union (+): Combines query sets from two StringSet instances without duplicates.
 
----
+Intersection (*): Finds common words between two query sets.
 
-## Project Structure
+Similarity calculation: Computes a cosine similarity score between document and query sets based on unique word presence.
 
-- `main.cpp`: Contains the `StringSet` class, helper classes, and `ahmedsheref2288` function demonstrating the usage.
-- `test.txt`: Sample input file containing text data (make sure to create this in your project folder for testing).
+Display: Neatly prints the query set with indices for easy viewing.
 
----
+Helper utilities: Includes helper classes for file handling, character checks, and word extraction.
+
+Project Files
+main.cpp: Contains the StringSet implementation and a demonstration function ahmedsheref2288.
+
+test.txt: Sample text file to test file loading features (ensure this file is present in the project directory).
+
 🧮 Task 2 – Terminal UI: Calculator & Caesar Cipher
-📁 Folder: A1_T2_NULL_20230542
+Folder: A1_T2_NULL_20230542
 
-✨ Features
-✅ Terminal Calculator (Basic Arithmetic)
+Features
+Basic terminal calculator supporting addition, subtraction, multiplication, and division.
 
-✅ Caesar Cipher Encryptor (User-defined key)
+Caesar cipher encryptor with user-defined key.
 
-🎨 UI Elements
-ASCII UI layout
+Simple ASCII UI layout with colored terminal output (if supported).
 
-Colored terminal output (if supported)
-
-🚀 How to Compile & Run
+Compile & Run
 bash
 Copy
 Edit
@@ -69,44 +63,47 @@ cd A1_T2_NULL_20230542
 g++ -std=c++11 -o Task2 main.cpp
 ./Task2
 🎮 Task 3 – Object-Oriented Game
-📁 Folder: A1_T3_NULL_20230542
+Folder: A1_T3_NULL_20230542
 
-🧱 OOP Features
-✅ Class-based structure with inheritance
+Features
+Clean, class-based structure with inheritance.
 
-✅ Abstraction & Polymorphism
+Implements abstraction and polymorphism principles.
 
-✅ Clean encapsulated logic
+Well-encapsulated game logic.
 
-🚀 How to Compile & Run
+Compile & Run
 bash
 Copy
 Edit
 cd A1_T3_NULL_20230542
 g++ -std=c++11 -o Task3 main.cpp
 ./Task3
-# Word Frequency Counter
+Word Frequency Counter
+Overview
+This C++ program reads a text file and calculates the frequency of each unique word. It processes the text by removing punctuation, converting words to lowercase (case-insensitive counting), and ignoring numeric-only strings. The results are displayed in a clean table format.
 
-## Overview
+Features
+Prompts user for the filename to analyze.
 
-This C++ program reads a text file and calculates the frequency of each unique word in the file. It processes the text by removing punctuation, converting words to lowercase for case-insensitive comparison, and ignoring numeric strings (words that consist only of digits). The results are displayed in a neatly formatted table showing each word alongside its frequency count.
+Reads the file word-by-word, cleaning and normalizing the input.
 
----
+Removes punctuation characters from words.
 
-## Features
+Converts all words to lowercase for case-insensitive frequency counting.
 
-- Prompts the user to enter the filename of the text file to analyze.
-- Opens and reads the file word by word.
-- Cleans each word by:
-  - Removing punctuation characters.
-  - Converting all letters to lowercase to ensure case-insensitive counting.
-- Ignores words that contain only numbers (e.g., "12345").
-- Uses a `map<string, int>` to count and store the frequency of each word.
-- Dynamically adjusts the output table width according to the longest word found.
-- Displays a formatted table of words and their corresponding frequencies.
+Ignores words composed entirely of digits.
 
- Modular, clean code with comments
+Uses std::map<std::string, int> to count frequencies of unique words.
 
- Working executables (tested)
+Dynamically adjusts the output table width to fit the longest word.
 
- Submitted before deadline
+Displays a formatted table showing each word and its frequency count.
+
+Additional Notes
+The code is modular and clean for easy maintenance.
+
+The program has been tested and produces working executables.
+
+Submitted before the deadline.
+
